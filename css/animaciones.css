@@ -1,0 +1,84 @@
+:root{
+    --dur: 2.5s;
+}
+
+.slidein-1{
+    animation-duration: var(--dur);
+    animation-name: slidein-1;
+}
+@keyframes slidein-1{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.slidein-2{
+    animation-duration: var(--dur);
+    animation-name: slidein-2;
+}
+@keyframes slidein-2{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+    75%
+    {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+}
+.slidein-3{
+    animation-duration: var(--dur);
+    animation-name: slidein-3;
+    animation-iteration-count: infinite;
+}
+@keyframes slidein-3{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+    75%
+    {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+}
+.slidein-4{
+    animation-duration: var(--dur);
+    animation-name: slidein-4;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidein-4{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+    30%{
+        color: red;
+    }
+    75%
+    {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+}
