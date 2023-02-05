@@ -1,20 +1,101 @@
+:root{
+    --width_base: 300px;
+    --heigth_base: 225px;
+    
+    --w_bars: 100px;
+    --w_bars_new: 300px; 
+
+}
+
 .Tra-1{
-    width: 100px;
-    height: 100px;
+    width: var(--w_bars);
+    height: var(--w_bars);
     background: red;
     transition: width 1s;
 }
 .Tra-1:hover{
-    width: 300px;
+    width: var(--w_bars_new);
+    height: var(--w_bars);
 }
 
 .Tra-2{
-    width: 100px;
-    height: 100px;
+    width: var(--w_bars);
+    height: var(--w_bars);
     background: blue;
     transition: width 1s, heigth 1s;
 }
 .Tra-2:hover{
+    width: var(--w_bars_new);
+    height: var(--w_bars);
+}
+
+/*Ejemplo 3*/
+.Tra-3{
+    width: var(--w_bars);
+    height: var(--w_bars);
+    background: green;
+    transition: width 2s;
+}
+.Tra-3:hover{
+    width: var(--w_bars_new);
+    height: var(--w_bars);
+}
+
+#div1{
+    transition-timing-function: linear;
+}
+#div2{
+    transition-timing-function: ease;
+}
+#div3{
+    transition-timing-function: ease-in;
+}
+#div4{
+    transition-timing-function: ease-out;
+}
+#div5{
+    transition-timing-function: ease-in-out;
+}
+
+
+/*Ejemplo 4*/
+.Tra-4{
+    width: var(--w_bars);
+    height: var(--w_bars);
+    background: purple;
+    transition: width 2s;
+    transition-delay: 500ms;
+}
+.Tra-4:hover{
     width: 300px;
-    height: 300px;
+}
+
+/*Ejemplo 5*/
+.Tra-5{
+    width: var(--width_base);
+    height: var(--heigth_base);
+    transition: width 2s heigth 1s;
+}
+.Tra-5:hover{
+    transform: scale(1.5);
+    transform: rotate(180deg);
+}
+/*Ejemplo 6*/
+.Tra-6{
+    width: var(--width_base);
+    height: var(--heigth_base);
+    transition: width 1s heigth 1s;
+}
+.Tra-6:hover{
+    transform-origin: left top;
+    transform: scale(1.5);
+}
+
+/*Ejemplo 7*/
+.Tra-7{
+    width: var(--width_base);
+    height: var(--heigth_base);
+}
+.Tra-7:hover{
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgb(15,15,15));
 }
