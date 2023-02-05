@@ -33,7 +33,7 @@ body
 }
 .Tra-2:hover{
     width: var(--w_bars_new);
-    height: var(--w_bars);
+    height: var(--w_bars_new);
 }
 
 /*Ejemplo 3*/

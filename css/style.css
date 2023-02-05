@@ -91,3 +91,9 @@ INICIA ESTILO DE MENU*/
    .dropdown:hover .dropdown-content {
       display: block;
    }
+
+
+   /*IMAGENES*/
+   .Home_Pic{
+      width: 700px;
+  }
