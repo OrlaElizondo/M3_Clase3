@@ -1,3 +1,10 @@
+body
+{
+   font-family:"Segoe UI";
+}
+
+
+/*TRANSFORMACION*/
 :root{
     --width_base: 300px;
     --heigth_base: 225px;
